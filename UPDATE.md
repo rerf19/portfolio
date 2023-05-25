@@ -5,11 +5,11 @@ This file serves as a historical record of all updates made to the project. It i
 
 ## May 27th
 
-I started working on this project on May 20th. I have been searching for examples and tools that might be useful, such as tricks and hosts for my website. I have completed the ideation of the website and the initial structure. The next step will be to design the components of the website. This will include a mockup and a simplified version of the website.
+I started working on this project on May 20th. I have been searching for examples and tools that might be useful, such as tricks and hosts for my website. I have completed the ideation of the website and the initial structure. The next step will be to design the components of the website. This will include a wireframe and a simple mockup.
 
 <details>
-  <summary>First thought of the Strcture</summary>
-  <p>
+	<summary>First thought of the Strcture</summary>
+	<p>
 
 **Header**
 
@@ -25,5 +25,5 @@ The main section of the website should be divided into two parts:  path and best
 **Footer**
 
 The footer should include the contact information, such as email address and socia media.
-</p>
+	</p>
 </details>

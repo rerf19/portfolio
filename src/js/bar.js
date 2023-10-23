@@ -6,6 +6,7 @@ function handleClick(e) {
         bar.style.animationPlayState = "running";
 
     });
+    scroll(0,0)
     const lastBar = bars[bars.length - 1];
     lastBar.addEventListener("animationend", () => {
         setTimeout(() => {

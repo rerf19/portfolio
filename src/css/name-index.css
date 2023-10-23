@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cairo');
 
-.header {
+.top {
     font-family: "Cairo";
     text-align: center;
     color: #FFF;
@@ -13,7 +13,7 @@
     line-height:2;
 }
 
-.header h1 {
+.top h1 {
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
     background-size: cover;
     color: transparent;

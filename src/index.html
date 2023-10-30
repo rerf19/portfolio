@@ -7,30 +7,39 @@
     <link rel="stylesheet" href="/css/bar.css">
     <link rel="stylesheet" href="/css/name-index.css">
     <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/about.css">
     <title>Rodrigo Ferreira | Software Developer</title>
 </head>
 <body class="header finisher-header">
+    <section>
+
+        <div class="top">
     
-    <div class="top">
-
-        <nav>
-            <a href="./" onclick="handleClick(event)">HOME</a>
-            <a href="./about.html" onclick="handleClick(event)">ABOUT</a>
-            <a href="#">PROJECTS</a>
-            <div id="indicator"></div>
-        </nav>
-
-        <h1>Rodrigo Ferreira</h1>
-
-        <div class="text-animation">
-            <h2 style="font-size: 50px;">
-                <p class="typewrite" data-period="2000" data-type='[ "Welcome!!", "I Love to Develop.", "I Love to Learn." ]'>
-                    <span class="wrap"></span>
-                </p>
-            </h2>
+            <nav>
+                <a href="./" onclick="handleClick(event)">HOME</a>
+                <a href="./about.html" onclick="handleClick(event)">ABOUT</a>
+                <a href="#">PROJECTS</a>
+                <div id="indicator"></div>
+            </nav>
+    
+            <h1>Rodrigo Ferreira</h1>
+    
+            <div class="text-animation">
+                <h2 style="font-size: 50px;">
+                    <p class="typewrite" data-period="2000" data-type='[ "Welcome!!", "I Love to Develop.", "I Love to Learn." ]'>
+                        <span class="wrap"></span>
+                    </p>
+                </h2>
+            </div>
+    
         </div>
 
-    </div>
+    </section>
+
+    <section class="hidden">
+        <h1 class="about-title">ABOUT</h1>
+    </section>
+    
 
     <div class="bartender">
         <div class="bar"></div>
@@ -82,4 +91,5 @@
 
 <script src="/js/bar.js"></script>
 <script src="/js/textwrite.js"></script>
+<script src="/js/scroll.js"></script>
 </html>

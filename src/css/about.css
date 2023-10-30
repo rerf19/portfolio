@@ -1,0 +1,21 @@
+.about-title {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 200px;
+    font-family: sans-serif;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+

@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index/desktop/geral.css">
     <link rel="stylesheet" href="/css/index/desktop/bar.css">
-    <link rel="stylesheet" href="/css/index/desktop/header.css">
+    <link rel="stylesheet" href="/css/index/desktop/top.css">
+    <link rel="stylesheet" href="/css/index/desktop/hidden.css">
     <link rel="stylesheet" href="/css/index/desktop/about.css">
+    <link rel="stylesheet" href="/css/index/desktop/projects.css">
     <title>Rodrigo Ferreira | Software Developer</title>
 </head>
 <body class="header finisher-header">
 
-    <section class="top">
+    <section class="top hidden-top">
             
             <div class="bartender">
                 <div class="bar"></div>
@@ -22,8 +24,8 @@
             </div>
 
             <nav>
-                <a href="#about">ABOUT</a>
-                <a href="#projects">PROJECTS</a>
+                <a href="#about" onclick="">ABOUT</a>
+                <a href="#projects" onclick="">PROJECTS</a>
                 <a href="/blog.html" onclick="handleClick(event)" >BLOG</a>
                 <div id="indicator"></div>
             </nav>
@@ -46,12 +48,12 @@
 
     </section>
 
-    <section class="hidden" id="about">
+    <section class="hidden-left about">
         <h1 class="about-title">ABOUT</h1>
     </section>
 
-    <section class="hidden" id="projects">
-        <h1 class="about-title">PROJECTS</h1>
+    <section class="hidden-right projects">
+        <h1 class="projects-title" style="position: sticky;">PROJECTS</h1>
     </section>
     
     

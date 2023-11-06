@@ -1,8 +1,9 @@
 .about{
+    display: grid;
     grid-template-areas: 
-    'title title'
-    'left1 right1'
-    'left2 right2';
+    'title title title title'
+    'left1 left1 right1 right1'
+    'left2 left2 right2 right2';
 }
 
 .about .about-title {
@@ -20,22 +21,35 @@
 
 .about .left1{
     grid-area: left1;
-    float: left;
-}
-
-.about .righ1{
-    grid-area: right1;
-    float:right;
+    text-align: right;
+    min-width: 50vw;
+    max-width: 50vw;
+    padding-right: 10px;
 }
 
 .about .left2{
     grid-area: left2;
-    float: left;
+    text-align: right;
+    min-width: 50vw;
+    max-width: 50vw;
+    padding-right: 10px;
 }
 
-.about .righ2{
+.about .right1{
+    grid-area: right1;
+    text-align: left;
+    min-width: 50vw;
+    max-width: 50vw;
+    float: right;
+    padding-left: 10px;
+}
+
+.about .right2{
     grid-area: right2;
-    float:right;
+    text-align: left;
+    min-width: 50vw;
+    max-width: 50vw;
+    padding-left: 10px;
 }
 
 

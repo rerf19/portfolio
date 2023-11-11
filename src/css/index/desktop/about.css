@@ -4,7 +4,8 @@
     'title title title title'
     'left1 left1 right1 right1'
     'devider devider devider devider'
-    'left2 left2 right2 right2';
+    'left2 left2 right2 right2'
+    'devider2 devider2 devider2 devider2';
 }
 
 .about .about-title {
@@ -26,35 +27,34 @@
 .about .left1{
     grid-area: left1;
     text-align: right;
-    min-width: 50vw;
-    max-width: 50vw;
+    min-width: 30vw;
+    max-width: 30vw;
     padding-right: 12px;
 }
 
 .about .left2{
     grid-area: left2;
     text-align: right;
-    min-width: 50vw;
-    max-width: 50vw;
+    min-width: 30vw;
+    max-width: 30vw;
     padding-right: 12px;
 }
 
 .about .right1{
     grid-area: right1;
     text-align: left;
-    min-width: 50vw;
-    max-width: 50vw;
+    min-width: 70vw;
+    max-width: 70vw;
     float: right;
     padding-left: 12px;
-    padding-top: 24px;
     font-size: 20px;
 }
 
 .about .right2{
     grid-area: right2;
     text-align: left;
-    min-width: 50vw;
-    max-width: 50vw;
+    min-width: 70vw;
+    max-width: 70vw;
     padding-left: 12px;
     padding-top: 0px;
 }
@@ -66,7 +66,19 @@
     width: 60%;
     border-radius: 50px;
     position: relative;
-    margin-top: 12px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.devider2{ 
+    grid-area: devider2;
+    background-color: white;
+    height: 5px;
+    width: 60%;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
 

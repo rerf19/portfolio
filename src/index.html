@@ -13,7 +13,7 @@
 </head>
 <body class="header finisher-header">
 
-    <section class="top hidden-top">
+    <section class="top">
             
             <div class="bartender">
                 <div class="bar"></div>
@@ -23,15 +23,15 @@
                 <div class="bar"></div>
             </div>
 
-            <nav>
+            <nav class="hidden-left">
                 <a href="/projects.html" onclick="">PROJECTS</a>
                 <a href="/blog.html" onclick="handleClick(event)" >BLOG</a>
                 <div id="indicator"></div>
             </nav>
     
-            <h1>Rodrigo Ferreira</h1>
+            <h1 class="hidden-top">Rodrigo Ferreira</h1>
     
-            <div class="text-animation">
+            <div class="text-animation hidden-bottom">
                 <h2 style="font-size: 50px;">
                     <p class="typewrite" data-period="2000" data-type='[ "Welcome!!", "I am a software developer"]'>
                         <span class="wrap"></span>
@@ -39,7 +39,7 @@
                 </h2>
             </div>
 
-            <svg class="arrows">
+            <svg class="arrows hidden-left">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
                 <path class="a2" d="M0 20 L30 52 L60 20"></path>
                 <path class="a3" d="M0 40 L30 72 L60 40"></path>
@@ -49,8 +49,8 @@
 
     <section class="about">
 
-        <div class="title">
-            <h1 class="about-title hidden-top">ABOUT</h1>
+        <div class="title hidden-left">
+            <h1 class="about-title">ABOUT</h1>
         </div>
 
         <div class="left1 hidden-left">
@@ -80,6 +80,84 @@
 
     <section class="hidden-left projects">
         <h1 class="projects-title" style="position: sticky;">PROJECTS</h1>
+        <section class="articles">
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="https://picsum.photos/id/1011/800/450" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>This is some title</h2>
+                        <p>
+                        Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="https://picsum.photos/id/1005/800/450" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>This is some title</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="https://picsum.photos/id/103/800/450" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>This is some title</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="article-wrapper">
+                    <figure>
+                        <img src="https://picsum.photos/id/103/800/450" alt="" />
+                    </figure>
+                    <div class="article-body">
+                        <h2>This is some title</h2>
+                        <p>
+                            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+                        </p>
+                        <a href="#" class="read-more">
+                            Read more <span class="sr-only">about this is some title</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </section>
     </section>
     
     

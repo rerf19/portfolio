@@ -12,7 +12,6 @@
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     font-size: 200px;
-    font-family: sans-serif;
     float: right;
     margin: 0;
 }
@@ -59,7 +58,7 @@
     padding-top: 0px;
 }
 
-.devider{ 
+.about .devider{ 
     grid-area: devider;
     background-color: white;
     height: 5px;
@@ -70,7 +69,7 @@
     margin-bottom: 48px;
 }
 
-.devider2{ 
+.about .devider2{ 
     grid-area: devider2;
     background-color: white;
     height: 5px;

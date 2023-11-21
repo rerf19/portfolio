@@ -57,7 +57,8 @@
             <h2>ABOUT ME</h2>
         </div>
 
-        <div class="right1 hidden-top"><p>Hello! <br> I'm a motivated and dedicated Computer Science graduate from Lancaster University.  <br> with a passion for building a successful career in the technology industry. <br> Equipped with a strong IT operations and team management foundation, I thrive on tackling challenges head-on. </p></div>
+        <div class="right1 hidden-top"><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ad voluptatum esse repellendus modi consequuntur enim, molestias culpa ab dolorem laboriosam adipisci dolorum cumque aliquam. Ea expedita dolorum perspiciatis molestias saepe.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ad voluptatum esse repellendus modi consequuntur enim, molestias culpa ab dolorem laboriosam adipisci dolorum cumque aliquam. Ea expedita dolorum perspiciatis molestias saepe.</div>
 
         <div class="devider hidden-left"></div>
 
@@ -86,17 +87,6 @@
 
         <div class="carouselP hidden-top">
 
-            <div class="radioB">
-                <input type="radio" name="position" class="r1"/>
-                <input type="radio" name="position" class="r2"/>
-                <input type="radio" name="position" class="r3" checked />
-                <input type="radio" name="position" class="r4"/>
-                <input type="radio" name="position" class="r5"/>
-                <input type="radio" name="position" class="r6"/>
-            </div>
-
-            
-
             <main id="carousel">
                 <div class="item">
                     <article>
@@ -105,7 +95,7 @@
                                 <img src="https://picsum.photos/id/103/800/450" alt="" />
                             </figure>
                             <div class="article-body">
-                                <h2>This is some title</h2>
+                                <h2>VM Selector</h2>
                                 <p>
                                     Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
                                 </p>
@@ -126,7 +116,7 @@
                                 <img src="https://picsum.photos/id/103/800/450" alt="" />
                             </figure>
                             <div class="article-body">
-                                <h2>This is some title</h2>
+                                <h2>STR - Percusion Group</h2>
                                 <p>
                                     Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
                                 </p>
@@ -139,9 +129,6 @@
                             </div>
                         </div>
                     </article>
-                </div>
-                <div class="item">
-    
                 </div>
                 <div class="item">
     
@@ -156,7 +143,14 @@
 
             
         </div>
-        
+
+        <div class="radioB">
+            <input type="radio" name="position"/>
+            <input type="radio" name="position"/>
+            <input type="radio" name="position"/>
+            <input type="radio" name="position"/>
+            <input type="radio" name="position"/>
+        </div>
         
     </section>
     
@@ -205,17 +199,5 @@
 <script src="/js/bar.js"></script>
 <script src="/js/textwrite.js"></script>
 <script src="/js/scroll.js"></script>
-<script>
-    
-document.addEventListener('DOMContentLoaded', function () {
-    const radioInputs = document.querySelectorAll('.radioB input');
-    const carousel = document.getElementById('carousel');
-
-    radioInputs.forEach((input, index) => {
-        input.addEventListener('change', function () {
-            carousel.style.setProperty('--position', index + 1);
-        });
-    });
-});
-</script>
+<script src="/js/carousel.js"></script>
 </html>

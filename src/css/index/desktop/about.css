@@ -2,16 +2,13 @@
     display: grid;
     grid-template-areas: 
     'title title title title'
-    'left1 left1 right1 right1'
-    'devider devider devider devider'
-    'left2 left2 right2 right2'
-    'devider2 devider2 devider2 devider2';
+    'left1 left1 right1 right1';
 }
 
 .about .about-title {
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    font-size: 200px;
+    font-size: 150px;
     float: right;
     margin: 0;
 }
@@ -23,39 +20,33 @@
     margin-bottom: 42px;
 }
 
-.about .left1{
+.about .left{
     grid-area: left1;
-    text-align: right;
-    min-width: 30vw;
-    max-width: 30vw;
-    padding-right: 12px;
+    min-width: 40vw;
+    max-width: 40vw;
+    min-height: 100vh;
+    padding-left: 48px;
+    position: relative;
 }
 
-.about .left2{
-    grid-area: left2;
-    text-align: right;
-    min-width: 30vw;
-    max-width: 30vw;
-    padding-right: 12px;
+.about .left h2{
+    font-size: 48px;
+    margin-bottom: 24px;
 }
 
-.about .right1{
+.about .right{
     grid-area: right1;
-    text-align: left;
-    min-width: 70vw;
-    max-width: 70vw;
-    float: right;
-    padding-left: 12px;
+    min-width: 60vw;
+    max-width: 60vw;
+    padding-left: 96px;
     font-size: 20px;
+    position: relative;
 }
 
-.about .right2{
-    grid-area: right2;
-    text-align: left;
-    min-width: 70vw;
-    max-width: 70vw;
-    padding-left: 12px;
-    padding-top: 0px;
+.about .center-v{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .about .devider{ 
@@ -69,16 +60,6 @@
     margin-bottom: 48px;
 }
 
-.about .devider2{ 
-    grid-area: devider2;
-    background-color: white;
-    height: 5px;
-    width: 60%;
-    border-radius: 50px;
-    position: relative;
-    margin-top: 48px;
-    margin-bottom: 48px;
-}
 
 
 

@@ -1,11 +1,11 @@
-:root{
+:root {
     --background: #1c1c1c;
     --nav1: #74913b;
     --nav2: #e9ad6c;
     --nav3: #ffd0a7;
 }
 
-html{
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,19 +13,19 @@ html{
     background-color: #1c1c1c;
 }
 
-body{
-    color: white;
-    margin: 0;
+body {
+    background-color: transparent !important;
+    color: white !important;
     padding: 0;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
-section{
+section {
     min-height: 100vh;
 }

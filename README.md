@@ -1,6 +1,4 @@
-
 ![status/active](https://img.shields.io/badge/STATUS-ACTIVE-%23059669?style=flat-square)
-
 
 <h1 align="center">Portofolio</h1>
 
@@ -8,7 +6,7 @@
 
 ## Do you wanna try?
 
-The portfolio will be visable to everyone on my domain. You will have the opportonity to see all of it here (I'll put the link in a near future).
+The portfolio will be visable to everyone on my domain. You will have the opportonity to see all of it here (rodrigoferreira.dev).
 
 ## Technologies
 
@@ -23,4 +21,3 @@ The portfolio will be visable to everyone on my domain. You will have the opport
 Give a ⭐️ if this project helped you!
 <br>
 <a href="https://www.buymeacoffee.com/rerf19" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-

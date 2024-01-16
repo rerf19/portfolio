@@ -1,3 +1,8 @@
-h1 {
+.about h1 {
     font-weight: 700;
+    font-size: 5vmin;
+}
+
+.about .p-left {
+    font-weight: 300;
 }

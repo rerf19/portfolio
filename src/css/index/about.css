@@ -1,8 +1,19 @@
+.about {
+    display: flex;
+    align-items: center;
+    min-height: 70dvh;
+}
+
 .about h1 {
     font-weight: 700;
-    font-size: 5vmin;
 }
 
 .about .p-left {
     font-weight: 300;
+    font-size: 20px;
+}
+
+.about .p-right {
+    font-weight: 300;
+    font-size: 20px;
 }

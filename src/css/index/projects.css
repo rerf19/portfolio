@@ -324,9 +324,9 @@
 }
 
 /* states */
-button:hover + .design-container,
-button:active + .design-container,
-button:focus + .design-container {
+a:hover + .design-container,
+a:active + .design-container,
+a:focus + .design-container {
     --tr: 20;
     --op: 0.7;
 }
@@ -338,4 +338,8 @@ button:focus + .design-container {
     color: hsla(0, 0%, 100%, 0.6);
     font-size: 16px;
     font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.col-md {
+    margin-bottom: 24px;
 }

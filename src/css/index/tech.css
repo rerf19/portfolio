@@ -1,0 +1,9 @@
+.tech {
+    display: flex;
+    align-items: center;
+    min-height: 50dvh;
+}
+
+.tech i {
+    font-size: 5em;
+}

@@ -1,5 +1,53 @@
-.about {
-    display: flex;
-    align-items: center;
+.contact {
+    background-color: #75863d;
     min-height: 70dvh;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact i {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.contact input {
+    margin-bottom: 12px;
+    background: none;
+    border-radius: 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contact textarea {
+    margin-bottom: 12px;
+    background-color: #75863d;
+}
+
+.contact .btn {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.contact .btn:hover {
+    background-color: white;
+    color: #75863d;
+}
+
+.contact .left {
+    border-right: 1px white solid;
+}
+.contact .right {
+}
+
+@media only screen and (max-width: 992px) {
+    .contact .left {
+        border-right: 0px;
+        margin-bottom: 100px;
+    }
+    .contact .right {
+    }
 }

@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    font-family: "Inconsolata", monospace;
+    font-family: "Inconsolata", monospace !important;
     background-color: transparent !important;
     color: white !important;
     padding: 0;
@@ -27,7 +27,3 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-
-/* section {
-    min-height: 100vh;
-} */

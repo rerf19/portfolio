@@ -101,12 +101,12 @@
             <div class="container">
                 <div class="row">
                     <div class="text-center">
-                        <h1 class="display-5 projects-title">
+                        <h1 class="display-1 projects-title">
                             SKILLS & EXPERIENCES
                         </h1>
                     </div>
                 </div>
-                <div class="row" style="height: 24px"></div>
+                <div class="row" style="height: 100px"></div>
                 <div class="row text-center">
                     <h3>PROGRAMMING LANGUAGES</h3>
                 </div>
@@ -337,7 +337,57 @@
             </div>
         </section>
 
-        <section class="contact"></section>
+        <section class="contact">
+            <div class="container">
+                <div class="row" style="height: 100px"></div>
+                <div class="row">
+                    <div class="text-center">
+                        <h1 class="display-1 projects-title">CONTACT ME</h1>
+                    </div>
+                </div>
+                <div class="row" style="height: 100px"></div>
+                <div class="row">
+                    <div class="col-lg-4 left text-center">
+                        <a href="https://github.com/rerf19"
+                            ><i class="devicon-github-original"></i
+                        ></a>
+                        <a href="https://www.linkedin.com/in/rodrigo-ferreira9/"
+                            ><i class="devicon-linkedin-plain"></i
+                        ></a>
+                    </div>
+                    <div class="col-lg-8 right">
+                        <form action="/send_email.php" method="POST">
+                            <input
+                                type="text"
+                                placeholder="NAME"
+                                class="form-control"
+                                id="name"
+                                required
+                            />
+                            <input
+                                type="email"
+                                placeholder="EMAIL"
+                                class="form-control"
+                                id="email"
+                                required
+                            />
+                            <textarea
+                                name="mgs"
+                                class="form-control input"
+                                id="exampleFormControlTextarea1"
+                                rows="3"
+                                placeholder="WRITE HERE YOUR MESSAGE!"
+                                required
+                            ></textarea>
+                            <button type="submit" class="btn" submit>
+                                SEND
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row" style="height: 100px"></div>
+            </div>
+        </section>
 
         <script
             src="js/finisher-header.es5.min.js"
@@ -363,7 +413,7 @@
                 },
                 colors: {
                     background: "#1c1c1c",
-                    particles: ["#fbfcca", "#d7f3fe", "#ffd0a7"],
+                    particles: ["#fbfcca", "#75863D", "#ffd0a7"],
                 },
                 blending: "overlay",
                 opacity: {

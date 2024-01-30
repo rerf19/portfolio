@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about h1 {
+    font-weight: 700;
+}
+
+.about .left p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.about .right {
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 50px;
+    text-align: start;
+}
+
+.about .left {
+    border-right: 1px solid white;
+    text-align: end;
+    padding-right: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+    .about .left {
+        border-right: 10px;
+        text-align: center !important;
+        margin-bottom: 24px;
+        padding-right: 12px;
+    }
+
+    .about .right {
+        text-align: center !important;
+        font-size: 15px;
+        padding-left: 12px;
+    }
+}

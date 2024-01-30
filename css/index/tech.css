@@ -1,0 +1,15 @@
+.tech {
+    display: flex;
+    align-items: center;
+    min-height: 50dvh;
+}
+
+i {
+    font-size: 4em;
+}
+
+@media only screen and (max-width: 992px) {
+    i {
+        font-size: 2em;
+    }
+}

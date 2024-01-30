@@ -27,3 +27,7 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+
+canvas {
+    max-height: 100%;
+}

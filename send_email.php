@@ -6,7 +6,7 @@ $headers = "From:" . $_POST["email"] ."\r\n";
 $additional_headers = "-f" . $_POST["email"] ."";
 
 // the message
-$msg = "Nome: " . $_POST["nome"] . "\nEmail: " . $_POST["email"] . "\nMensagem:\n " . $_POST["mgs"];
+$msg = "Name: " . $_POST["name"] . "\nEmail: " . $_POST["email"] . "\nMessage:\n " . $_POST["mgs"];
 
 // use wordwrap() if lines are longer than 70 characters
 //$msg = wordwrap($msg,70);

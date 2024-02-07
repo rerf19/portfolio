@@ -6,11 +6,7 @@
 
 ## Do you wanna try?
 
-The portfolio will be visable to everyone on my domain. You will have the opportonity to see all of it here (rodrigoferreira.dev).
-
-## Technologies
-
-## References
+The portfolio will be visable to everyone on my domain. You will have the opportonity to see all of it [here](https://rodrigoferreira.dev).
 
 ## Contributers
 

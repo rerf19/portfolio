@@ -14,7 +14,7 @@
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
         <link rel="stylesheet" href="/css/index/bar.css" />
-        <link rel="stylesheet" href="/css/index/top.css" />
+        <link rel="stylesheet" href="/css/index/hero.css" />
         <link rel="stylesheet" href="/css/index/hidden.css" />
         <link rel="stylesheet" href="/css/index/about.css" />
         <link rel="stylesheet" href="/css/index/tech.css" />
@@ -26,7 +26,7 @@
     </head>
     <body class="header finisher-header">
         
-        <?php include "main_page/top.html" ?>
+        <?php include "main_page/hero.html" ?>
 
         <?php include "main_page/about.html" ?>
 
@@ -42,7 +42,7 @@
         ></script>
         <script type="text/javascript">
             new FinisherHeader({
-                count: 50,
+                count: 100,
                 size: {
                     min: 2,
                     max: 28,

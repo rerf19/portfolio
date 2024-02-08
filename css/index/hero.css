@@ -1,4 +1,4 @@
-.top {
+.hero {
     text-align: center;
     color: #fff;
     display: flex;
@@ -8,17 +8,7 @@
     height: 102vh;
 }
 
-.top h1 {
-    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-    background-size: cover;
-    color: transparent;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 9vw;
-}
-
+/*NAV*/
 nav {
     position: absolute;
     top: 10%;
@@ -34,16 +24,45 @@ nav a {
     margin: 0px 10px 0px 10px;
 }
 
-.arrows {
+/*TITLE*/
+
+.hero h1 {
+    background-image: url(https://media.giphy.com/media/pJ12CTdwoTTwokzEIm/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9vw;
+}
+
+/*TEXT*/
+
+.hero .text-animation {
+    min-height: 60px;
+}
+
+/*ICONS*/
+
+.hero a {
+    text-decoration: none;
+    color: white;
+}
+
+/*ARROWS*/
+
+.hero .arrows {
     width: 60px;
     height: 72px;
     position: absolute;
     left: 50%;
     margin-left: -30px;
     bottom: 20px;
+    padding: 0;
 }
 
-.arrows path {
+.hero .arrows path {
     stroke: var(--nav1);
     fill: transparent;
     stroke-width: 1px;
@@ -81,17 +100,17 @@ nav a {
     }
 }
 
-.arrows path.a1 {
+.hero .arrows path.a1 {
     animation-delay: -1s;
     -webkit-animation-delay: -1s;
 }
 
-.arrows path.a2 {
+.hero .arrows path.a2 {
     animation-delay: -0.5s;
     -webkit-animation-delay: -0.5s;
 }
 
-.arrows path.a3 {
+.hero .arrows path.a3 {
     animation-delay: 0s;
     -webkit-animation-delay: 0s;
 }

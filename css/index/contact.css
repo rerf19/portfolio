@@ -1,7 +1,9 @@
 .contact {
-    background-color: #75863d;
+    background-color: var(--c5);
     min-height: 70dvh;
 }
+
+/*LEFT*/
 
 .contact a {
     text-decoration: none;
@@ -9,9 +11,11 @@
 }
 
 .contact i {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
+
+/*FORM*/
 
 .contact input {
     margin-bottom: 12px;
@@ -24,7 +28,12 @@
 
 .contact textarea {
     margin-bottom: 12px;
-    background-color: #75863d;
+    background-color: var(--c5);
+    color: white;
+}
+
+.contact textarea::placeholder {
+    color: white;
 }
 
 .contact .btn {
@@ -34,20 +43,30 @@
 
 .contact .btn:hover {
     background-color: white;
-    color: #75863d;
+    color: var(--c5);
 }
 
 .contact .left {
     border-right: 1px white solid;
 }
-.contact .right {
+
+.contact input::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.contact input {
+    color: white;
+}
+
+.contact input::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: white;
 }
 
 @media only screen and (max-width: 992px) {
     .contact .left {
         border-right: 0px;
         margin-bottom: 100px;
-    }
-    .contact .right {
     }
 }

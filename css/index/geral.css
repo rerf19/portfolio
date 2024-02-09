@@ -2,15 +2,18 @@
 
 :root {
     --background: #1c1c1c;
-    --nav1: #74913b;
-    --nav2: #e9ad6c;
-    --nav3: #ffd0a7;
+    /* --background: #1c1c1c; */
+    --c1: #e8998d;
+    --c2: #b0e298;
+    --c3: #aa64cb;
+    --c4: #eed2cc;
+    --c5: #a1683a;
 }
 
 html {
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c;
+    background-color: var(--background);
 }
 
 body {
@@ -29,5 +32,20 @@ body::-webkit-scrollbar {
 }
 
 canvas {
-    max-height: 3200px;
+    height: 450dvh;
+    min-width: 100dvw;
+}
+
+@media only screen and (max-width: 992px) {
+    canvas {
+        height: 550dvh;
+        min-width: 100dvw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    canvas {
+        height: 600dvh;
+        min-width: 100dvw;
+    }
 }

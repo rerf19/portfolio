@@ -63,7 +63,7 @@ nav a {
 }
 
 .hero .arrows path {
-    stroke: var(--nav1);
+    stroke: var(--c5);
     fill: transparent;
     stroke-width: 1px;
     animation: arrow 2s infinite;

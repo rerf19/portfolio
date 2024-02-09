@@ -42,10 +42,10 @@
         ></script>
         <script type="text/javascript">
             new FinisherHeader({
-                count: 100,
+                count: 110,
                 size: {
                     min: 2,
-                    max: 28,
+                    max: 10,
                     pulse: 0.1,
                 },
                 speed: {
@@ -60,7 +60,7 @@
                 },
                 colors: {
                     background: "#1c1c1c",
-                    particles: ["#fbfcca", "#75863D", "#ffd0a7"],
+                    particles: ["#e8998d", "#b0e298", "#eed2cc"],
                 },
                 blending: "overlay",
                 opacity: {

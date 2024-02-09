@@ -8,6 +8,10 @@ i {
     font-size: 4em;
 }
 
+.tech h3 {
+    margin-bottom: 8px;
+}
+
 @media only screen and (max-width: 992px) {
     i {
         font-size: 2em;

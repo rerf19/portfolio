@@ -1,0 +1,8 @@
+.filterDiv {
+    display: none;
+    color: white;
+}
+
+.show {
+    display: block;
+}

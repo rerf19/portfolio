@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rodrigo Ferreira | Developer : Always Looking For a Good Challenge</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -20,9 +21,8 @@
         <link rel="stylesheet" href="/css/index/tech.css" />
         <link rel="stylesheet" href="/css/index/projects.css" />
         <link rel="stylesheet" href="/css/index/contact.css" />
-        <link rel="stylesheet" href="/css/index/geral.css" />
+        <link rel="stylesheet" href="/css/index/main.css" />
 
-        <title>Rodrigo Ferreira | Developer : Always Looking For a Good Challenge</title>
     </head>
     <body class="header finisher-header">
         

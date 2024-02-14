@@ -30,7 +30,7 @@
 
         <?php include "main_page/about.html" ?>
 
-        <?php include "main_page/tech.html" ?>
+        <?php include "main_page/skills.html" ?>
 
         <?php include "main_page/projects.html" ?>
 

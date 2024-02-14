@@ -41,6 +41,25 @@
             type="text/javascript"
         ></script>
         <script type="text/javascript">
+            window.addEventListener('DOMContentLoaded', (event) => {
+                // Get the position of the .contact element relative to the viewport
+                const contactSection = document.querySelector('.contact');
+                const canvas = document.getElementById("finisher-canvas");
+
+                function modifyCanvasHeight() {
+                    // Get the current position of .contact
+                    const contactSectionPosition = contactSection.getBoundingClientRect();
+                    
+                    // Set the height of the canvas to the top position of .contact
+                    canvas.style.height = contactSectionPosition.top + 'px';
+                    
+                    // Log the position for demonstration
+                    console.log('Canvas height set to:', canvas.style.height);
+                }
+
+                modifyCanvasHeight();
+            });
+
             new FinisherHeader({
                 count: 110,
                 size: {

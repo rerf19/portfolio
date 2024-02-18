@@ -31,21 +31,6 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-canvas {
-    height: 450dvh;
-    min-width: 100dvw;
-}
-
-@media only screen and (max-width: 992px) {
-    canvas {
-        height: 550dvh;
-        min-width: 100dvw;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    canvas {
-        height: 600dvh;
-        min-width: 100dvw;
-    }
+i {
+    font-size: 4em;
 }

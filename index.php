@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rodrigo Ferreira | Developer : Always Looking For a Good Challenge</title>
+        <title>Rodrigo Ferreira | Developer</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="/css/index/hero.css" />
         <link rel="stylesheet" href="/css/index/hidden.css" />
         <link rel="stylesheet" href="/css/index/about.css" />
-        <link rel="stylesheet" href="/css/index/tech.css" />
+        <link rel="stylesheet" href="/css/index/skills.css" />
         <link rel="stylesheet" href="/css/index/projects.css" />
         <link rel="stylesheet" href="/css/index/contact.css" />
         <link rel="stylesheet" href="/css/index/main.css" />

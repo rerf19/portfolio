@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rodrigo Ferreira | Developer</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -17,12 +18,11 @@
         <link rel="stylesheet" href="/css/index/hero.css" />
         <link rel="stylesheet" href="/css/index/hidden.css" />
         <link rel="stylesheet" href="/css/index/about.css" />
-        <link rel="stylesheet" href="/css/index/tech.css" />
+        <link rel="stylesheet" href="/css/index/skills.css" />
         <link rel="stylesheet" href="/css/index/projects.css" />
         <link rel="stylesheet" href="/css/index/contact.css" />
-        <link rel="stylesheet" href="/css/index/geral.css" />
+        <link rel="stylesheet" href="/css/index/main.css" />
 
-        <title>Rodrigo Ferreira | Developer : Always Looking For a Good Challenge</title>
     </head>
     <body class="header finisher-header">
         
@@ -30,7 +30,7 @@
 
         <?php include "main_page/about.html" ?>
 
-        <?php include "main_page/tech.html" ?>
+        <?php include "main_page/skills.html" ?>
 
         <?php include "main_page/projects.html" ?>
 
@@ -41,6 +41,25 @@
             type="text/javascript"
         ></script>
         <script type="text/javascript">
+            window.addEventListener('DOMContentLoaded', (event) => {
+                // Get the position of the .contact element relative to the viewport
+                const contactSection = document.querySelector('.contact');
+                const canvas = document.getElementById("finisher-canvas");
+
+                function modifyCanvasHeight() {
+                    // Get the current position of .contact
+                    const contactSectionPosition = contactSection.getBoundingClientRect();
+                    
+                    // Set the height of the canvas to the top position of .contact
+                    canvas.style.height = contactSectionPosition.top + 'px';
+                    
+                    // Log the position for demonstration
+                    console.log('Canvas height set to:', canvas.style.height);
+                }
+
+                modifyCanvasHeight();
+            });
+
             new FinisherHeader({
                 count: 110,
                 size: {

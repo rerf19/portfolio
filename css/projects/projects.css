@@ -1,0 +1,12 @@
+.filterDiv {
+    display: none;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+.card-text button {
+    margin-bottom: 6px;
+}

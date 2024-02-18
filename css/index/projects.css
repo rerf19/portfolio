@@ -306,3 +306,16 @@ a:focus + .design-container {
 .col-md {
     margin-bottom: 24px;
 }
+
+/* Button */
+.projects .btnP {
+    color: white;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.projects .btnP:hover {
+    color: var(--c5);
+    border: 1px var(--c5) solid;
+}

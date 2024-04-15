@@ -15,7 +15,6 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         />
-        <link rel="stylesheet" href="/css/index/bar.css" />
         <link rel="stylesheet" href="/css/index/hero.css" />
         <link rel="stylesheet" href="/css/index/hidden.css" />
         <link rel="stylesheet" href="/css/index/about.css" />
@@ -42,6 +41,8 @@
             type="text/javascript"
         ></script>
         <script type="text/javascript">
+
+            //LIMIT THE SIZE OF HEADER UNTIL THE CONTACTS SECTION
             window.addEventListener('DOMContentLoaded', (event) => {
                 // Get the position of the .contact element relative to the viewport
                 const contactSection = document.querySelector('.contact');
@@ -94,8 +95,5 @@
 
     </body>
 
-    <script src="/js/bar.js"></script>
     <script src="/js/textwrite.js"></script>
-    <script src="/js/scroll.js"></script>
-    <script src="/js/carousel.js"></script>
 </html>

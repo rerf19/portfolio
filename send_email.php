@@ -21,6 +21,6 @@ if(!$mail) {
 
 $mg = "t";
 
-header("Location: https://rodrigoferreira.dev? mg = $mg");
+header("Location: https://rodrigoferreira.dev?mg=$mg");
 die();
 ?>

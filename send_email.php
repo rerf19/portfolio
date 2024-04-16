@@ -14,6 +14,12 @@ $msg = "Name: " . $_POST["name"] . "\nEmail: " . $_POST["email"] . "\nMessage:\n
 // send email
 mail($to,$subject,$msg,$headers);
 
-header("Location: https://rodrigoferreira.dev");
+if ($error == false) {
+    $result='<div class="alert alert-success">Thank You! I will be in touch soon.</div>';
+}else {
+    $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+}
+
+header("Location: https://rodrigoferreira.dev?meg=t");
 die();
 ?>

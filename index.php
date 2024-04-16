@@ -22,9 +22,12 @@
         <link rel="stylesheet" href="/css/index/projects.css" />
         <link rel="stylesheet" href="/css/index/contact.css" />
         <link rel="stylesheet" href="/css/index/main.css" />
+        <link rel="stylesheet" href="/css/index/suc_message.css" />
 
     </head>
     <body class="header finisher-header">
+
+        <?php include "main_page/display_suc_message.php" ?> 
         
         <?php include "main_page/hero.html" ?>
 

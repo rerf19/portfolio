@@ -14,12 +14,12 @@ $msg = "Name: " . $_POST["name"] . "\nEmail: " . $_POST["email"] . "\nMessage:\n
 // send email
 $mail = mail($to,$subject,$msg,$headers);
 if(!$mail) {   
-    $mg = "f"  
+    $mg = "f" ;
 } else {
-    $mg = "t"
+    $mg = "t";
 }
 
-$mg = "t"
+$mg = "t";
 
 header("Location: https://rodrigoferreira.dev? mg = $mg");
 die();

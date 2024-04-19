@@ -27,7 +27,7 @@ nav a {
 /*TITLE*/
 
 .hero h1 {
-    background-image: url(https://media.giphy.com/media/pJ12CTdwoTTwokzEIm/giphy.gif);
+    background-image: url(/images/background-title.webp);
     background-size: cover;
     color: transparent;
     -moz-background-clip: text;

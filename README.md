@@ -1,14 +1,14 @@
 ![status/active](https://img.shields.io/badge/STATUS-ACTIVE-%23059669?style=flat-square)
 
-<h1 align="center">Portofolio</h1>
+<h1 align="center">Portfolio</h1>
 
-> My personal portofolio. I'm doing this project to be able to show up my ideias, personal projects and skills through my career.
+> My personal portfolio. I'm doing this project to be able to show up my ideas, personal projects and skills through my career.
 
 ## Do you wanna try?
 
-The portfolio will be visable to everyone on my domain. You will have the opportonity to see all of it [here](https://rodrigoferreira.dev).
+The portfolio will be visible to everyone on my domain. You will have the opportunity to see all of it [here](https://rodrigoferreira.dev).
 
-## Contributers
+## Contributors
 
 [![](https://github.com/rerf19.png?size=50)](https://github.com/rerf19)
 

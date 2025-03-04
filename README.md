@@ -4,6 +4,16 @@
 
 > My personal portfolio. I'm doing this project to be able to show up my ideas, personal projects and skills through my career.
 
+## Usability
+
+```
+cd example-app
+npm install && npm run build
+composer run dev
+```
+
+`php -S localhost:8000 -t public`
+
 ## Do you wanna try?
 
 The portfolio will be visible to everyone on my domain. You will have the opportunity to see all of it [here](https://rodrigoferreira.dev).

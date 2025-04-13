@@ -15,9 +15,9 @@
 </head>
     <body>
 
-        <?php include 'projects_page/search.html' ?>
+        @include('projects_page.search')    
 
-        <?php include 'projects_page/cards.html' ?>
+        @include('projects_page.cards')
 
     </body>
     <script src="/js/projects-search.js"></script>

@@ -19,6 +19,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Serve static assets from public directory
+        if ($this->app->environment('local')) {
+            $this->app->bind('path.public', function() {
+                return base_path('public');
+            });
+        }
     }
 }

@@ -27,17 +27,17 @@
     </head>
     <body class="header finisher-header">
 
-        <?php include "main_page/display_suc_message.php" ?> 
+        @include('main_page.display_suc_message')
         
-        <?php include "main_page/hero.html" ?>
+        @include('main_page.hero')
 
-        <?php include "main_page/about.html" ?>
+        @include('main_page.about')
 
-        <?php include "main_page/skills.html" ?>
+        @include('main_page.skills')
 
-        <?php include "main_page/projects.html" ?>
+        @include('main_page.projects')
 
-        <?php include "main_page/contacts.html" ?>
+        @include('main_page.contacts')
 
         <script
             src="js/finisher-header.es5.min.js"

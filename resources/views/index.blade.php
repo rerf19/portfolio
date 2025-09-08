@@ -37,8 +37,6 @@
 
         @include('main_page.projects')
 
-        @include('main_page.contacts')
-
         <script
             src="js/finisher-header.es5.min.js"
             type="text/javascript"

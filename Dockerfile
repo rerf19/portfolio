@@ -9,8 +9,13 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     git \
     unzip \
+    curl \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install gd pdo pdo_mysql zip
+
+# Install Node.js and npm (required for Vue/Vite)
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs
 
 # Install Composer (PHP package manager)
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

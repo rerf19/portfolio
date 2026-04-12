@@ -44,20 +44,9 @@ docker compose exec app npm run dev
 
 Then access at `http://localhost:8080`
 
-## 📝 Customization
-
-See **[TODO.md](./TODO.md)** for a complete guide on customizing your portfolio with your personal information, projects, and content.
-
-All customizable areas are marked with `<!-- TODO: ... -->` comments in the Vue components.
-
 ## 🌐 Live Demo
 
 The portfolio is live at [https://rodrigoferreira.dev](https://rodrigoferreira.dev)
-
-## 📚 Documentation
-
-- **[TODO.md](./TODO.md)** - Customization guide with all TODO locations
-- **[MIGRATION-NOTES.md](./MIGRATION-NOTES.md)** - Technical details about the transformation
 
 ## Contributors
 

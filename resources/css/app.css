@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e8998d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b0e298;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disable scrolling on home page (desktop only) */
+@media (min-width: 1024px) {
+    body:has(section.finisher-header) {
+        overflow: hidden;
+        height: 100vh;
+    }
+}

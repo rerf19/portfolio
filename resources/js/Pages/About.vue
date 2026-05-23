@@ -27,6 +27,5 @@ defineProps({
     bio: String,
     bio2: String,
     bio3: String,
-    skills: Array,
 });
 </script>

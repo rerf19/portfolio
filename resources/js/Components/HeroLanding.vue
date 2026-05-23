@@ -1,10 +1,7 @@
 <template>
     <section
-        class="min-h-screen flex items-center justify-center relative overflow-hidden header finisher-header"
+        class="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-        <!-- Particle background container -->
-        <canvas id="finisher-canvas" class="absolute inset-0 z-0"></canvas>
-
         <!-- Content -->
         <div class="container mx-auto px-6 relative z-10">
             <div class="max-w-4xl mx-auto text-center">
@@ -13,19 +10,19 @@
                     <span
                         class="bg-gradient-to-r from-coral via-mint to-peach bg-clip-text text-transparent"
                     >
-                        <!-- TODO: Replace with your name -->
                         Rodrigo Ferreira
                     </span>
                 </h1>
 
                 <!-- Subtitle -->
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
-                    <!-- TODO: Update your tagline -->
                     Full Stack Developer / Software Developer
                 </p>
 
                 <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div
+                    class="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                >
                     <Link
                         href="/projects"
                         class="px-8 py-4 bg-gradient-to-r from-coral to-mint text-white rounded-lg font-semibold hover:opacity-90 transition shadow-lg hover:shadow-xl"
@@ -42,7 +39,6 @@
 
                 <!-- Social Links -->
                 <div class="flex justify-center gap-6 mt-12">
-                    <!-- TODO: Update social links -->
                     <a
                         href="https://github.com/rerf19"
                         target="_blank"
@@ -80,37 +76,7 @@
 </template>
 
 <script setup>
-import { onMounted } from "vue";
 import { Link } from "@inertiajs/vue3";
-
-onMounted(() => {
-    // Initialize particle background
-    if (typeof FinisherHeader !== "undefined") {
-        new FinisherHeader({
-            count: 110,
-            size: {
-                min: 2,
-                max: 10,
-                pulse: 0.1,
-            },
-            speed: {
-                x: { min: 0, max: 0.6 },
-                y: { min: 0, max: 0.6 },
-            },
-            colors: {
-                background: "#1c1c1c",
-                particles: ["#e8998d", "#b0e298", "#eed2cc"],
-            },
-            blending: "overlay",
-            opacity: {
-                center: 1,
-                edge: 0,
-            },
-            skew: 0,
-            shapes: ["c"],
-        });
-    }
-});
 </script>
 
 <style scoped>

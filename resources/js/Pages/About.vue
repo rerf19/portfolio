@@ -9,31 +9,11 @@
                 </span>
             </h1>
 
-            <div class="max-w-4xl">
+            <div>
                 <!-- TODO: Update with your bio -->
                 <p class="text-xl text-gray-300 mb-8">{{ bio }}</p>
-
-                <!-- Skills Grid -->
-                <div class="grid md:grid-cols-2 gap-6 mt-12">
-                    <div
-                        v-for="skillGroup in skills"
-                        :key="skillGroup.category"
-                        class="bg-gray-900 p-6 rounded-lg border border-gray-800"
-                    >
-                        <h3 class="text-xl font-bold mb-4 text-coral">
-                            {{ skillGroup.category }}
-                        </h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span
-                                v-for="skill in skillGroup.items"
-                                :key="skill"
-                                class="px-3 py-1 bg-dark border border-gray-700 rounded-full text-sm"
-                            >
-                                {{ skill }}
-                            </span>
-                        </div>
-                    </div>
-                </div>
+                <p class="text-xl text-gray-300 mb-8">{{ bio2 }}</p>
+                <p class="text-xl text-gray-300 mb-8">{{ bio3 }}</p>
             </div>
         </div>
     </Layout>
@@ -45,6 +25,8 @@ import { Head } from "@inertiajs/vue3";
 
 defineProps({
     bio: String,
+    bio2: String,
+    bio3: String,
     skills: Array,
 });
 </script>

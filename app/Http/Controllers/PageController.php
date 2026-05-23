@@ -18,12 +18,6 @@ class PageController extends Controller
             'bio' => 'I’m a developer working in PHP and Drupal. My interest in tech started with computer games and grew into a curiosity about how systems work behind the scenes.',
             'bio2' => 'These days I enjoy building random stuff, learning new technologies, especially around AI. I value clear communication and collaboration, while also being comfortable working independently and taking ownership of tasks.',
             'bio3' => 'Outside of tech, you’ll usually find me playing volleyball or spending time with friends. I’m always open to new opportunities that are interesting, challenging, and give me the chance to keep learning.',
-            'skills' => [
-                ['category' => 'Frontend', 'items' => ['Vue', 'React', 'Tailwind CSS']],
-                ['category' => 'Backend', 'items' => ['Laravel', 'Node.js', 'PHP']],
-                ['category' => 'Database', 'items' => ['MySQL', 'PostgreSQL']],
-                ['category' => 'Tools', 'items' => ['Git', 'Docker', 'VS Code']],
-            ]
         ];
 
         return Inertia::render('About', $data);
@@ -36,6 +30,7 @@ class PageController extends Controller
                 'company' => 'Numiko',
                 'position' => 'Junior Back End Developer',
                 'period' => 'May 2024 – Now',
+                'location' => 'Leeds, UK',
                 'description' => '',
                 'achievements' => [
                     'Contribute to multi-client Drupal projects, collaborating within cross-functional teams to deliver high-quality solutions.',
@@ -49,6 +44,7 @@ class PageController extends Controller
                 'company' => 'Freelance',
                 'position' => 'Freelance',
                 'period' => 'Sep 2023 - Now',
+                'location' => 'Remote',
                 'description' => '',
                 'achievements' => [
                     'Designed and developed a visually stunning portfolio website for a photographer, showcasing their work in a captivating and user-friendly manner.',

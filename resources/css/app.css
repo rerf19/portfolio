@@ -33,17 +33,11 @@ html {
     }
 }
 
-/* Finisher header canvas */
+/* Finisher header: the library injects a canvas with position:absolute and z-index:-1.
+   The parent .finisher-header must be position:relative (set inline) so the canvas
+   is positioned relative to it. We override the canvas z-index to sit above the
+   background but below the content (which has z-index:1). */
 #finisher-canvas {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
     z-index: 0 !important;
     pointer-events: none;
-}
-
-.finisher-header {
-    isolation: isolate;
 }

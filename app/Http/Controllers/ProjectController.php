@@ -56,6 +56,7 @@ class ProjectController extends Controller
                     ['name' => 'Rodrigo Ferreira', 'role' => 'Full Stack Developer', 'link' => 'https://github.com/rerf19'],
                 ],
                 'featured' => true,
+                'status' => 'live',
                 'year' => '2026'
             ],
             [
@@ -70,6 +71,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
+                'status' => 'live',
                 'year' => '2026'
             ],
             [
@@ -84,6 +86,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
+                'status' => 'archived',
                 'year' => '2024'
             ],
             [
@@ -98,6 +101,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
+                'status' => 'in-development',
                 'year' => '2023'
             ],
             [
@@ -112,6 +116,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
+                'status' => 'live',
                 'year' => '2023'
             ],
             [
@@ -126,6 +131,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
+                'status' => 'in-development',
                 'year' => '2023'
             ],
             [
@@ -140,20 +146,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
-                'year' => '2022'
-            ],
-            [
-                'slug' => 'csharp-small-projects',
-                'title' => 'C# Small Projects',
-                'shortDescription' => 'A bunch of small projects made in C#.',
-                'fullDescription' => 'A bunch of small projects made in C#. Not Updated - Terminated.',
-                'technologies' => ['C#', 'Visual Studio'],
-                'github' => 'https://github.com/rerf19/c-sharp-small-projects',
-                'live' => null,
-                'images' => [],
-                'videos' => [],
-                'team' => [],
-                'featured' => false,
+                'status' => 'archived',
                 'year' => '2022'
             ],
             [
@@ -168,6 +161,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
+                'status' => 'archived',
                 'year' => '2022'
             ],
             [
@@ -182,6 +176,22 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
+                'status' => 'archived',
+                'year' => '2022'
+            ],
+            [
+                'slug' => 'csharp-small-projects',
+                'title' => 'C# Small Projects',
+                'shortDescription' => 'A bunch of small projects made in C#.',
+                'fullDescription' => 'A bunch of small projects made in C#. Not Updated - Terminated.',
+                'technologies' => ['C#', 'Visual Studio'],
+                'github' => 'https://github.com/rerf19/c-sharp-small-projects',
+                'live' => null,
+                'images' => [],
+                'videos' => [],
+                'team' => [],
+                'featured' => false,
+                'status' => 'archived',
                 'year' => '2022'
             ],
         ];

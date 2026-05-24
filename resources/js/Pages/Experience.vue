@@ -1,13 +1,25 @@
 <template>
     <Layout>
         <div class="container mx-auto px-6 py-20">
-            <h1 class="text-5xl font-bold mb-16">
-                <span
-                    class="bg-gradient-to-r from-coral to-mint bg-clip-text text-transparent"
+            <div
+                class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16"
+            >
+                <h1 class="text-5xl font-bold">
+                    <span
+                        class="bg-gradient-to-r from-coral to-mint bg-clip-text text-transparent"
+                    >
+                        Experience
+                    </span>
+                </h1>
+                <a
+                    href="/RodrigoFerreiraCV.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="shrink-0 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-coral to-mint text-white font-semibold rounded-lg hover:opacity-90 transition-opacity duration-200"
                 >
-                    Experience
-                </span>
-            </h1>
+                    View CV
+                </a>
+            </div>
 
             <!-- Timeline -->
             <div class="max-w-4xl">

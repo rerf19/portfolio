@@ -34,10 +34,12 @@ html {
 }
 
 /* Finisher header: the library injects a canvas with position:absolute and z-index:-1.
-   The parent .finisher-header must be position:relative (set inline) so the canvas
-   is positioned relative to it. We override the canvas z-index to sit above the
-   background but below the content (which has z-index:1). */
+   We force it to position:fixed so it stays locked to the viewport and does not
+   stretch the document height (which would create empty space below the footer on
+   short pages). z-index:0 keeps it above the dark background but below content
+   (which has z-index:1). */
 #finisher-canvas {
+    position: fixed !important;
     z-index: 0 !important;
     pointer-events: none;
 }

@@ -94,29 +94,6 @@
                         </p>
                     </section>
 
-                    <!-- Images -->
-                    <section
-                        v-if="project.images && project.images.length > 0"
-                        data-aos="fade-up"
-                    >
-                        <h2 class="text-2xl font-bold mb-4 text-white">
-                            Screenshots
-                        </h2>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <div
-                                v-for="(image, index) in project.images"
-                                :key="index"
-                                class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800"
-                            >
-                                <img
-                                    :src="image"
-                                    :alt="`${project.title} screenshot ${index + 1}`"
-                                    class="w-full h-auto"
-                                />
-                            </div>
-                        </div>
-                    </section>
-
                     <!-- Videos -->
                     <section
                         v-if="project.videos && project.videos.length > 0"
@@ -145,6 +122,29 @@
                                     "
                                     allowfullscreen
                                 ></iframe>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Images -->
+                    <section
+                        v-if="project.images && project.images.length > 0"
+                        data-aos="fade-up"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 text-white">
+                            Screenshots
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div
+                                v-for="(image, index) in project.images"
+                                :key="index"
+                                class="bg-gray-900 rounded-lg overflow-hidden border border-gray-800"
+                            >
+                                <img
+                                    :src="image"
+                                    :alt="`${project.title} screenshot ${index + 1}`"
+                                    class="w-full h-auto"
+                                />
                             </div>
                         </div>
                     </section>

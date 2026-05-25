@@ -42,6 +42,23 @@ class ProjectController extends Controller
     private function getAllProjects(): array
     {
         return [
+            // [
+            //     'slug' => '',
+            //     'title' => '',
+            //     'shortDescription' => '',
+            //     'fullDescription' => '',
+            //     'technologies' => ['Tech 1', 'Tech 2'],
+            //     'github' => 'https://github.com/rerf19/portfolio',
+            //     'live' => 'https://rodrigoferreira.dev',
+            //     'images' => [],
+            //     'videos' => [],
+            //     'team' => [
+            //         ['name' => 'Rodrigo Ferreira', 'role' => 'Full Stack Developer', 'link' => 'https://github.com/rerf19'],
+            //     ],
+            //     'featured' => true or false,
+            //     'status' => 'live' or 'archived' or 'in-development',
+            //     'year' => ''
+            // ],
             [
                 'slug' => 'portfolio-website',
                 'title' => 'Portfolio Website',
@@ -131,7 +148,7 @@ class ProjectController extends Controller
                 'videos' => [],
                 'team' => [],
                 'featured' => false,
-                'status' => 'in-development',
+                'status' => 'archived',
                 'year' => '2023'
             ],
             [

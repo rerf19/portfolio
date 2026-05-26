@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e8998d;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b0e298;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Disable scrolling on home page (desktop only) */
+@media (min-width: 1024px) {
+    body:has(section.finisher-header) {
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+
+/* Finisher header: the library injects a canvas with position:absolute and z-index:-1.
+   We force it to position:fixed so it stays locked to the viewport and does not
+   stretch the document height (which would create empty space below the footer on
+   short pages). z-index:0 keeps it above the dark background but below content
+   (which has z-index:1). */
+#finisher-canvas {
+    position: fixed !important;
+    z-index: 0 !important;
+    pointer-events: none;
+}

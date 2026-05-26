@@ -2,21 +2,51 @@
 
 <h1 align="center">Portfolio</h1>
 
-> My personal portfolio. I'm doing this project to be able to show up my ideas, personal projects and skills through my career.
+> My modern personal portfolio built with Laravel, Inertia.js, and Vue 3. Showcasing my ideas, projects, and skills with a clean, professional design.
 
-## Usability
+## 🚀 Tech Stack
 
+- **Backend**: Laravel 11
+- **Frontend**: Vue 3 + Inertia.js
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Animations**: AOS (Animate On Scroll)
+- **Deployment**: Docker + Nginx
+
+## 🛠️ Setup & Development
+
+### Prerequisites
+
+- Docker & Docker Compose
+
+### Quick Start
+
+```bash
+# Start Docker containers
+docker compose up -d
+
+# Install dependencies (first time only)
+docker compose exec app composer install
+docker compose exec app npm install
+
+# Build assets
+docker compose exec app npm run build
+
+# Access the site
+# Open http://localhost:8080 in your browser
 ```
-cd example-app
-npm install && npm run build
-composer run dev
+
+### Development Mode (Hot Reload)
+
+```bash
+docker compose exec app npm run dev
 ```
 
-`php -S localhost:8000 -t public`
+Then access at `http://localhost:8080`
 
-## Do you wanna try?
+## 🌐 Live Demo
 
-The portfolio will be visible to everyone on my domain. You will have the opportunity to see all of it [here](https://rodrigoferreira.dev).
+The portfolio is live at [https://rodrigoferreira.dev](https://rodrigoferreira.dev)
 
 ## Contributors
 

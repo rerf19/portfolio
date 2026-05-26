@@ -3,12 +3,10 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <p class="text-gray-400 text-sm">
-                    <!-- TODO: Update copyright year and name -->
                     © {{ currentYear }} Rodrigo Ferreira. All rights reserved.
                 </p>
 
                 <div class="flex items-center space-x-6 mt-4 md:mt-0">
-                    <!-- TODO: Update social links -->
                     <a
                         href="https://github.com/rerf19"
                         target="_blank"

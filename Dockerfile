@@ -7,11 +7,16 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libfreetype6-dev \
     libzip-dev \
+    libicu-dev \
     git \
     unzip \
     curl \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd pdo pdo_mysql zip
+    && docker-php-ext-install gd intl pdo pdo_mysql zip
+
+# Allow screenshot uploads from the admin panel (PHP defaults to 2M)
+RUN echo "upload_max_filesize=10M" > /usr/local/etc/php/conf.d/uploads.ini \
+    && echo "post_max_size=12M" >> /usr/local/etc/php/conf.d/uploads.ini
 
 # Install Node.js and npm (required for Vue/Vite)
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \

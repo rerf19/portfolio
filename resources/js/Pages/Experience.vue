@@ -53,7 +53,10 @@
 
                         <p class="text-gray-300 mb-4">{{ exp.description }}</p>
 
-                        <div v-if="exp.achievements" class="space-y-2">
+                        <div
+                            v-if="exp.achievements.length > 0"
+                            class="space-y-2"
+                        >
                             <p class="text-sm font-semibold text-mint">
                                 Key Achievements:
                             </p>

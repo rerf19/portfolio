@@ -13,15 +13,13 @@
             <!-- Bio -->
             <div class="grid lg:grid-cols-3 gap-12 mb-20 items-start">
                 <!-- Text -->
-                <div class="lg:col-span-2">
-                    <p class="text-xl text-gray-300 mb-6 leading-relaxed">
-                        {{ bio }}
-                    </p>
-                    <p class="text-xl text-gray-300 mb-6 leading-relaxed">
-                        {{ bio2 }}
-                    </p>
-                    <p class="text-xl text-gray-300 leading-relaxed">
-                        {{ bio3 }}
+                <div class="lg:col-span-2 space-y-6">
+                    <p
+                        v-for="(paragraph, index) in paragraphs"
+                        :key="index"
+                        class="text-xl text-gray-300 leading-relaxed"
+                    >
+                        {{ paragraph }}
                     </p>
                 </div>
 
@@ -127,8 +125,6 @@
 import Layout from "../Components/Layout.vue";
 
 defineProps({
-    bio: String,
-    bio2: String,
-    bio3: String,
+    paragraphs: Array,
 });
 </script>

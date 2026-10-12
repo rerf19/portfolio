@@ -181,29 +181,45 @@ To add a new page:
 
 ## ✏️ Adding/Editing Content
 
-### Personal info (name, bio, skills, experience)
+Projects, work experience and the About bio are stored in MySQL and managed from the **admin panel** at **http://localhost:8080/admin** (built with [Filament](https://filamentphp.com)).
 
-Edit the data arrays directly in the controllers — they have `// TODO` comments:
+| Admin section | What it controls                                                                 |
+| ------------- | -------------------------------------------------------------------------------- |
+| Projects      | `/projects` grid and detail pages. Drag rows to reorder, toggle to hide/publish. |
+| Experiences   | `/experience` timeline. Sorted by start date; leave end date empty for "Now".    |
+| About         | The bio paragraphs on `/about`.                                                  |
 
-- `app/Http/Controllers/PageController.php` → `about()` and `experience()` methods
-- `app/Http/Controllers/ProjectController.php` → `getAllProjects()` method
+Screenshots uploaded in the admin are stored in `storage/app/public/projects` and served from `/storage/...`.
 
-### Adding a project
+### First-time setup
 
-Open `ProjectController.php` and add a new array entry inside `getAllProjects()`:
+Set your admin login in `.env` (never commit it):
 
-```php
-[
-    'slug' => 'my-new-project',       // URL: /projects/my-new-project
-    'title' => 'My New Project',
-    'shortDescription' => '...',
-    'fullDescription' => '...',
-    'technologies' => ['Laravel', 'Vue'],
-    'github' => 'https://github.com/...',
-    'live' => 'https://...',
-    'featured' => true,
-    'year' => '2026'
-],
+```env
+ADMIN_NAME="Your Name"
+ADMIN_EMAIL=you@example.com
+ADMIN_PASSWORD=a-long-random-password
+```
+
+```bash
+docker compose exec app php artisan migrate --seed   # create tables + your admin login
+docker compose exec app php artisan storage:link     # make uploaded images publicly reachable
+```
+
+Site content isn't seeded: it lives in the database. To get real content locally, import a backup of the production database (`gunzip < db-YYYY-MM-DD.sql.gz | docker compose exec -T mysql mysql -uroot -prootpassword laravel`).
+
+To change the password later, edit `ADMIN_PASSWORD` and run `php artisan db:seed --class=AdminUserSeeder`. (Alternatively, `php artisan make:filament-user` creates a user interactively.)
+
+> `APP_URL` in `.env` must match the address you open the site on (e.g. `http://localhost:8080`), otherwise uploaded image URLs break.
+
+### Deploying to production
+
+```bash
+docker compose build app && docker compose up -d
+docker compose exec app composer install --no-dev --optimize-autoloader
+docker compose exec app php artisan migrate --force
+docker compose exec app php artisan storage:link
+docker compose exec app php artisan filament:optimize
 ```
 
 ---

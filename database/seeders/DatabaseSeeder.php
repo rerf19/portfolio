@@ -9,6 +9,9 @@ class DatabaseSeeder extends Seeder
     /**
      * Seed the application's database.
      *
+     * Site content (projects, experience, about) lives in the database and is
+     * managed in the admin panel; restore it from a database backup.
+     *
      * The admin login comes from ADMIN_EMAIL / ADMIN_PASSWORD in .env, or
      * can be created with `php artisan make:filament-user`.
      */
@@ -16,9 +19,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             AdminUserSeeder::class,
-            ProjectSeeder::class,
-            ExperienceSeeder::class,
-            AboutSeeder::class,
         ]);
     }
 }
